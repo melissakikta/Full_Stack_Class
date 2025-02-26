@@ -11,6 +11,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
+console.log("Hello");
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('../client/dist'));
